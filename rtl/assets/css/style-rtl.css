@@ -20709,12 +20709,14 @@ form input[type="search"] {
 /* === GENERAL NAVBAR STYLE FIXES === */
 .navbar-nav .nav-link {
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 800;
   padding: 0.5rem 1rem;
   display: flex;
   align-items: center;
   height: 48px;
+  color:#0494fc!important;
 }
+
 
 /* Make all elements consistent height */
 .navbar .btn,
@@ -20754,3 +20756,27 @@ form input[type="search"] {
 
 /*User CSS*/
 /*# sourceMappingURL=style-rtl.css.map */
+/* ============================
+   Custom Logo and Navbar Fix
+============================ */
+.navbar {
+  min-height: 70px !important; /* FORCE the navbar to stay slim */
+}
+
+.navbar-brand-item {
+  max-height: 60px !important; /* FORCE the logo to stay nice size */
+  height: auto !important;
+}
+/* === DROPDOWN MENU FIXES === */
+.dropdown-item {
+  font-size: 1rem; /* smaller font */
+  font-weight: 400; /* normal, not bold */
+  color: #0494fc !important;
+}
+
+/* Optional hover effect for dropdown items */
+.dropdown-item:hover, .dropdown-item:focus {
+  color: #0275b1 !important;
+  background-color: #f0f8ff;
+}
+
